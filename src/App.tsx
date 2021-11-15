@@ -25,7 +25,7 @@ export default function App() {
   const [weatherDataForLondon, setweatherDataForLondon] = useState(null);
 
   const [infoError, setInfoError] = useState("");
-
+  console.log(infoError);
   const getWeatherForCurrentLocation = useCallback(async () => {
     try {
       navigator.geolocation.getCurrentPosition(function (position) {
@@ -39,6 +39,7 @@ export default function App() {
         lat,
         lon
       );
+      console.log(weatherDataByCurrentLocation);
       setWeatherDataForCurrentLocation(weatherDataByCurrentLocation);
     } catch (err) {
       setInfoError("Please turn on your location");
@@ -46,7 +47,7 @@ export default function App() {
   }, [lat, lon]);
   useEffect(() => {
     getWeatherForCurrentLocation();
-  }, [lat, lon, infoError, weatherDataForCurrentLocation]);
+  }, [lon]);
 
   const getWeatherForCities = useCallback(async () => {
     try {
@@ -61,20 +62,14 @@ export default function App() {
   }, [defaultCityName1, defaultCityName2]);
   useEffect(() => {
     getWeatherForCities();
-  }, [
-    defaultCityName1,
-    defaultCityName2,
-    infoError,
-    weatherDataForBerlin,
-    weatherDataForLondon,
-  ]);
+  }, []);
+  console.log(weatherDataForLondon);
   return (
     <currentLocation.Provider
       value={{
         weatherDataForCurrentLocation,
         weatherDataForBerlin,
         weatherDataForLondon,
-        infoError,
       }}
     >
       <Router>

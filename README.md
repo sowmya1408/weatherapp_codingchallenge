@@ -1,5 +1,14 @@
 # Getting Started with Weatherapp
 
+## Technologies used
+
+1. React - For building reusable components and handling data
+2. Typescript - Typescript for type checks in the components.
+3. Jest - to test a simple test case.
+4. CSS - for styling components
+5. React router dom - for routing through webpages.
+6. MaterialUI Icons - For the Back icon.
+
 ## Setup the project
 
 1. Navigate to the link [Weatherapp github repo](https://github.com/sowmya1408/weatherapp_codingchallenge).
@@ -66,4 +75,6 @@ In the project directory, there a small test solution included for PageHeading, 
 
 3. Implement more better UI.
 
-4. I have attempted a test solution for components for the first time but would like to learn more and write good test cases.
+4. Improve in cross-platform.
+
+5. I have attempted a test solution for components for the first time but would like to learn more and write good test cases.

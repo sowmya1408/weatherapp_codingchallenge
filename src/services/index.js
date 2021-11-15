@@ -1,4 +1,4 @@
-const token = "bda3f1a71e4bfdedb79be12107b87246";
+const token = "e905e31d0f351236265a912ae9977a0b";
 const url = "https://api.openweathermap.org/data/2.5/weather";
 
 const responseConf = async (response) => {
@@ -20,6 +20,7 @@ export const getWeatherByCityName = async (city) => {
 };
 
 export const getWeatherByCurrentLocation = async (lat, lon) => {
+  console.log("lat", lat);
   if (!lat && !lon) {
     throw new Error("You need to provide city");
   }
