@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useCallback } from "react";
-import "./App.css";
 import { currentLocation } from "./context/currentLocationContext";
 import Dashboard from "./pages/Dashboard";
 import WeatherDetails from "./pages/WeatherDetails";

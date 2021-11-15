@@ -12,8 +12,6 @@
     #26caf8 50%,
     #c625d0 100%
   );
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
   display: flex;
   justify-content: space-around;
   align-items: center;
