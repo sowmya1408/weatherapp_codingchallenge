@@ -72,7 +72,7 @@ export default function App() {
     >
       <Router>
         <Routes>
-          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard />} />
           <Route path="weatherDetails/:location" element={<WeatherDetails />} />
         </Routes>
       </Router>

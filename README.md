@@ -19,3 +19,13 @@ In the project directory, using the terminal you can run:
 1. Split the webpages to small component which can be re-used in both webpages.
 
 2. Created a component folder in src and added two components.
+
+3.Utilisation of OpenWeatherAPI- created a services folder and added a file, which contains functions to get data using cityname and currentlocation.
+
+4. There is a function in the same file to handle error in case of any issues.
+
+5. Worked with currentlocation API to get users current location, if location is not turned on it would ask to turn the location to allow.
+
+6. Fetch the data in App.js and pass the values to context so that it can be accessible to both pages.
+
+7. Utilise the data in dashboard pages to display on the UI similar to wireframe.

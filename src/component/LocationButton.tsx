@@ -1,8 +1,9 @@
 import React from "react";
+import "./LocationButton.css";
 
 interface LocationButtonProps {
   text: string;
-  temperature: number;
+  temperature: string;
   handleClick: () => void;
 }
 
@@ -12,9 +13,9 @@ const LocationButton = ({
   handleClick,
 }: LocationButtonProps) => {
   return (
-    <button onClick={handleClick}>
+    <button className="btn" type="button" onClick={handleClick}>
       {text}
-      {`${temperature}°C`}
+      <span>{`${temperature}°C`}</span>
     </button>
   );
 };
