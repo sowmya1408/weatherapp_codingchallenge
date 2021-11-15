@@ -29,6 +29,10 @@ In the project directory, there a small test solution included for PageHeading, 
 
 ### `npm run test`
 
+## Heroku Deployment
+
+Deployed the project to Heroku link : [Weatherapp_Deployment](https://weatherappcoding.herokuapp.com/).
+
 ## Approach to the project
 
 1. Split the webpages to small component which can be re-used in both webpages.
