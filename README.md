@@ -13,3 +13,9 @@
 In the project directory, using the terminal you can run:
 
 ### `npm start`
+
+## Approach to the project
+
+1. Split the webpages to small component which can be re-used in both webpages.
+
+2. Created a component folder in src and added two components.
