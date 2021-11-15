@@ -1,0 +1,19 @@
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body {
+  background-image: url(../images/weather-background.jpg) no-repeat center
+    center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}

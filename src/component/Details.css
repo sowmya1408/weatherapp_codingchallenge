@@ -1,0 +1,22 @@
+.InfoContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.InfoContainer section ul li {
+  list-style: none;
+}
+
+.tempSize {
+  font-size: 30px;
+}
+
+.InfoContainer section ul li span.temp {
+  padding-left: 10px;
+}
+
+.backButton {
+  margin-top: 20px;
+  margin-left: 20px;
+}
