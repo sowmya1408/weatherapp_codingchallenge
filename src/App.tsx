@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import "./App.css";
 import { currentLocation } from "./context/currentLocationContext";
 import Dashboard from "./pages/Dashboard";
 import WeatherDetails from "./pages/WeatherDetails";
@@ -45,7 +46,7 @@ export default function App() {
   }, [lat, lon]);
   useEffect(() => {
     getWeatherForCurrentLocation();
-  }, [lon]);
+  }, [lat, lon, infoError, weatherDataForCurrentLocation]);
 
   const getWeatherForCities = useCallback(async () => {
     try {
@@ -60,13 +61,20 @@ export default function App() {
   }, [defaultCityName1, defaultCityName2]);
   useEffect(() => {
     getWeatherForCities();
-  }, []);
+  }, [
+    defaultCityName1,
+    defaultCityName2,
+    infoError,
+    weatherDataForBerlin,
+    weatherDataForLondon,
+  ]);
   return (
     <currentLocation.Provider
       value={{
         weatherDataForCurrentLocation,
         weatherDataForBerlin,
         weatherDataForLondon,
+        infoError,
       }}
     >
       <Router>
